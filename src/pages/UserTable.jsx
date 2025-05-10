@@ -25,6 +25,9 @@ function UserTable() {
           <tr>
             <th>First Name</th>
             <th>Last Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Address</th>
             <th>Actions</th>
           </tr>
         </thead>
@@ -33,6 +36,9 @@ function UserTable() {
             <tr key={user.id}>
               <td>{user.firstName}</td>
               <td>{user.lastName}</td>
+              <td>{user.email}</td>
+              <td>{user.phone}</td>
+              <td>{user.address}</td>
               <td>
                 <button onClick={() => navigate(`/edit/${user.id}`)}>Edit</button>
               </td>
